@@ -1,9 +1,16 @@
 Soundtrackshare::Application.routes.draw do
-  devise_for :users
 
-  get "welcome/index"
+  resources :posts
 
-  get "welcome/about"
+  resources :tags
+
+  resources :users
+
+  devise_for :users, controllers: { registrations: 'users/registrations' }
+
+  match "about" => 'welcome#about', via: :get
+
+  match "search" => 'static#search', via: :get
 
   root to: 'welcome#index'
 

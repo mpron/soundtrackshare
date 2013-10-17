@@ -1,0 +1,14 @@
+HTTP,Path,action,used for
+GET,/search,static#search,Search Page
+GET,/posts,posts#index,Show posts from search
+GET,post/new,posts#new,Add Post
+POST,post ,posts#create,Create New Post
+GET,users,users#index,All Users List Page
+GET,user/:id/posts,posts#index,User's Submissions
+DELETE,user/:id/posts/:id,posts#destroy,Delete Posts
+,Users - Devise,,Sign up - Sign in
+GET,tag/new,tags#new,Add Tag
+POST,tag,tags#create,Create New Tag
+,,,
+GET,tag/:id/posts,posts#index (posts controller will need 'if' statement),Mood pages with Curated video at the top and List of other posts with that tag
+GET,/about,static#about,About page
