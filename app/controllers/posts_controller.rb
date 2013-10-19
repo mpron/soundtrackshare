@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
-  def index
-    #need one for users, tags(mood pages), and search results
-    @posts = Post.visible_to.paginate(page: params[:page], per_page: 10)
+  def index 
+    #search results
+    @posts = Post.includes(:tags).where('tags.id' => params['tag_ids']).all.paginate(page: params[:page], per_page: 10)
   end
 
   def new

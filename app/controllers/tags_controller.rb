@@ -4,6 +4,11 @@ class TagsController < ApplicationController
     authorize! :create, @tag, message: "You need be an admin."
   end
 
+  def show
+    @tag = Tag.find(params[:id])
+    @posts = @tag.posts
+  end
+
   def create
     @tag = Tag.new(params[:tag])
     authorize! :create, @post, message: "You need be an admin."
