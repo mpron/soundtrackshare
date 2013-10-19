@@ -6,9 +6,7 @@ Soundtrackshare::Application.routes.draw do
     resources :posts
   end
 
-  #because I want the Mood pages to have 
-  #the name of the tag in the url
-  #get ':tagname', to: 'posts#index, as: :tag'
+  #get '/t/:tagname', to: 'tags#show', as: :tag
 
   namespace :admin do
     get '/users', to: 'users#index'
