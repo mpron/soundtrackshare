@@ -2,7 +2,17 @@ Soundtrackshare::Application.routes.draw do
 
   resources :posts
 
-  resources :tags
+  resources :tags do
+    resources :posts
+  end
+
+  #because I want the Mood pages to have 
+  #the name of the tag in the url
+  #get ':tagname', to: 'posts#index, as: :tag'
+
+  namespace :admin do
+    get '/users', to: 'users#index'
+  end
 
   resources :users
 
