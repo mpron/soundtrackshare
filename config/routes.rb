@@ -6,7 +6,9 @@ Soundtrackshare::Application.routes.draw do
     resources :posts
   end
 
-  #get '/t/:tagname', to: 'tags#show', as: :tag
+  resources :posts do
+    resources :taggings
+  end
 
   namespace :admin do
     get '/users', to: 'users#index'
@@ -18,7 +20,9 @@ Soundtrackshare::Application.routes.draw do
 
   match "about" => 'welcome#about', via: :get
 
-  match "search" => 'static#search', via: :get
+  match "search" => 'welcome#search', via: :get
+
+  get '/tag/:tagname', to: 'tags#show', as: :tag
 
   root to: 'welcome#index'
 

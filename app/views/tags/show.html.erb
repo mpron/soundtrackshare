@@ -1,1 +1,16 @@
-show.html.erb
+<% if @tag %>
+<div class="text-center">
+  <h1><%= params[:tagname].capitalize! %></h1>
+<div class="video-container">
+<iframe allowFullScreen="true" allowscriptaccess="always" frameborder="0" height="430" src="<%=  %>" title="YouTube video player" width="640"></iframe>
+</div>
+</div>
+
+<%= @posts.inspect %>
+<% end %>
+<% if false %>
+
+<%= render @posts %>
+<%= will_paginate @posts %>
+
+<% end %>

@@ -1,7 +1,9 @@
 class PostsController < ApplicationController
   def index 
     #search results
-    @posts = Post.includes(:tags).where('tags.id' => params['tag_ids']).all.paginate(page: params[:page], per_page: 10)
+    #@posts = Post.includes(:tags).where(
+     # 'tags.id' => params['tag_ids']).all.paginate(
+    #  page: params[:page], per_page: 10)
   end
 
   def new
@@ -12,7 +14,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(params[:post])
-    #with  taggings
+    #@taggings = (params[:tag]).each{|t| Taggings.new(@post.id, t.id)}
     authorize! :create, @post, message: "You need create an account first."
     if @post.save
       flash[:notice] = "Post was saved successfully."
@@ -21,6 +23,7 @@ class PostsController < ApplicationController
       flash[:error] = "Error creating post. Please try again."
       render :new
     end
+    #@taggings.save
   end
 
   def destroy

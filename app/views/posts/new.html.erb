@@ -1,2 +1,24 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<h1 class="text-center">Posts#new</h1>
+<%= form_for post, html: {class="form"} do |f| %>
+  <%= control_group_tag(post.errors[:url]) do %>
+    <div class="form-group">
+      <%= f.label :url, class: 'control-label' %>
+      <div class="controls col-lg-4">
+        <%= f.text_field :url, placeholder: "YouTube URL" %>
+      </div>
+    </div>
+  <% end %>
+  <%= control_group_tag(post.errors[:tags]) do %>
+    <div class="form-group">
+      <%= f.label :tags, class: 'control-label' %>
+      <div class="controls col-lg-10">
+        <%= f.text_area :body, placeholder: "Tags, Comma-separated" %>
+      </div>
+    </div>
+  <% end %>
+  <div class="control-group">
+    <div class="controls">
+      <%= f.submit "Save", class: 'btn' %>
+    </div>
+  </div>
+<% end %>
