@@ -1,5 +1,5 @@
-<h1 class="text-center">Posts#new</h1>
-<%= form_for post, html: {class="form"} do |f| %>
+<h1 class="text-center">New Post</h1>
+<%= form_for @post, html: {class="form"} do |f| %>
   <%= control_group_tag(post.errors[:url]) do %>
     <div class="form-group">
       <%= f.label :url, class: 'control-label' %>
@@ -8,11 +8,11 @@
       </div>
     </div>
   <% end %>
-  <%= control_group_tag(post.errors[:tags]) do %>
+  <%= control_group_tag(post.errors[:tag_list]) do %>
     <div class="form-group">
-      <%= f.label :tags, class: 'control-label' %>
+      <%= f.label :tag_list, class: 'control-label' %>
       <div class="controls col-lg-10">
-        <%= f.text_area :body, placeholder: "Tags, Comma-separated" %>
+        <%= f.text_area :tag_list, placeholder: "Tags (Comma-separated)" %>
       </div>
     </div>
   <% end %>
