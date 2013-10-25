@@ -22,7 +22,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find(params[:id])
-    authorize! :destroy, @post, message: "You delete this. Scalawag."
+    authorize! :destroy, @post, message: "You can't delete this. Scalawag."
     if @post.destroy
       flash[:notice] = "Post was deleted successfully."
       redirect_to posts_path
