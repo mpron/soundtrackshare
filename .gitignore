@@ -15,4 +15,4 @@
 /tmp
 
 # Ignore credential files
-# config/application.yml
+config/application.yml
