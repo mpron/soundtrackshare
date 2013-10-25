@@ -1,5 +1,5 @@
 <h1 class="text-center">New Post</h1>
-<%= form_for @post, html: {class="form"} do |f| %>
+<%= form_for @post, html: {class: "form"} do |f| %>
   <%= control_group_tag(post.errors[:url]) do %>
     <div class="form-group">
       <%= f.label :url, class: 'control-label' %>

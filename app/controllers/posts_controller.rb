@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
-    authorize! :create, @post, message: "You need create an account first."
+    #authorize! :create, @post, message: "You need create an account first."
   end
 
   def create
