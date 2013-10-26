@@ -5,7 +5,7 @@ class TagsController < ApplicationController
   end
 
   def show
-    @tag = Tag.find_by_name(params[:tagname])
+    @tag = Tag.find_by_name(params[:tag])
     @posts = @tag.posts
   end
 
