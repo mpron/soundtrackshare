@@ -9,7 +9,7 @@ class BootstrapLinkRenderer < WillPaginate::ActionView::LinkRenderer
       class: ('active' if page == current_page)
   end
 
-  def previous_page
+    def previous_page
     num = @collection.current_page > 1 && @collection.current_page - 1
     previous_or_next_page(num, '&laquo;', 'previous_page')
   end
@@ -26,4 +26,5 @@ class BootstrapLinkRenderer < WillPaginate::ActionView::LinkRenderer
   def gap
     tag :li, link(super, '#'), class: 'disabled'
   end
+
 end

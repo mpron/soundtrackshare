@@ -32,6 +32,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'faker'
 gem 'cancan'
+gem 'figaro'
 gem 'will_paginate', '~> 3.0'
 gem 'acts-as-taggable-on'
 
