@@ -33,7 +33,7 @@ GEM
     arel (3.0.2)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2-x86-mingw32)
-    bootstrap-sass (2.3.2.2)
+    bootstrap-sass (3.0.0.0.rc2)
       sass (~> 3.2)
     builder (3.0.4)
     cancan (1.6.10)
@@ -94,7 +94,6 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
-    redcarpet (3.0.0)
     sass (3.2.12)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -126,7 +125,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts-as-taggable-on
-  bootstrap-sass
+  bootstrap-sass (~> 3.0.0.0.rc)
   cancan
   coffee-rails
   devise
@@ -134,8 +133,7 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 3.2.13)
-  redcarpet
-  sass-rails
+  sass-rails (>= 3.2)
   sqlite3
   uglifier
   will_paginate (~> 3.0)

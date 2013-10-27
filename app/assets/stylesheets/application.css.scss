@@ -1,6 +1,15 @@
 @import "bootstrap-custom";
 @import "bootstrap";
 
+.tag{
+  background-color: #c2daeb;
+  font-size: 17px;
+  margin: 4px 4px 9px 1px;
+  padding: 0.1em 0.8em;
+  line-height: 1.4;
+  border-radius: 15px;
+}
+
 /*.video-container {
   position: relative;
   padding-bottom: 56.25%;

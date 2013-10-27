@@ -1,8 +1,8 @@
 <% if @tag %>
 <div class="text-center">
-  <h1><%= params[:tagname].capitalize! %></h1>
+  <h1><%= params[:tag].capitalize! %></h1>
 <div class="video-container">
-<iframe allowFullScreen="true" allowscriptaccess="always" frameborder="0" height="430" src="http://www.youtube.com/watch?v=<%= tag: :playlist %>" title="YouTube video player" width="640"></iframe>
+<iframe allowFullScreen="true" allowscriptaccess="always" frameborder="0" height="430" src="http://www.youtube.com/embed<%= @tag.playlist %>" title="YouTube video player" width="640"></iframe>
 </div>
 </div>
 

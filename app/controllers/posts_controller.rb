@@ -25,7 +25,7 @@ class PostsController < ApplicationController
     authorize! :destroy, @post, message: "You can't delete this. Scalawag."
     if @post.destroy
       flash[:notice] = "Post was deleted successfully."
-      redirect_to posts_path
+      redirect_to current_user
     else
       flash[:error] = "There was an error deleting the post."
       render :show

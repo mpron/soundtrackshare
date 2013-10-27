@@ -17,9 +17,10 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails'
+  gem 'sass-rails', '>= 3.2' 
+  gem 'bootstrap-sass', '~> 3.0.0.0.rc'
   gem 'coffee-rails'
-  gem 'bootstrap-sass'
+
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -31,7 +32,6 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'faker'
 gem 'cancan'
-gem 'redcarpet'
 gem 'will_paginate', '~> 3.0'
 gem 'acts-as-taggable-on'
 

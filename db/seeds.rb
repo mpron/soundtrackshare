@@ -5,7 +5,7 @@ u = User.new(
   password_confirmation: 'helloworld')
 u.skip_confirmation!
 u.save
-#u.update_attribute(:role, 'admin')
+u.update_attribute(:role, 'admin')
 
 u = User.new(
   name: 'Member User',
@@ -51,7 +51,7 @@ Post.create(url: "PWlLp5riuzk", user_id: 1,
 #Tagging.create(post_id: 2, tag_id: 4)
 
 #3
-#Post.create(url: "OWCB2DabJ04")
+Post.create(url: "OWCB2DabJ04", user_id: 2, tag_list: "dramatic, epic")
 #Tagging.create(post_id: 3, tag_id: 3)
 #Tagging.create(post_id: 3, tag_id: 4)
 

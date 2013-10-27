@@ -14,9 +14,9 @@ Soundtrackshare::Application.routes.draw do
     get '/users', to: 'users#index'
   end
 
-  resources :users, only: [:show]
-
   devise_for :users
+
+  resources :users, only: [:show]
 
   match "about" => 'welcome#about', via: :get
 
