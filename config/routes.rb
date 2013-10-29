@@ -1,14 +1,8 @@
 Soundtrackshare::Application.routes.draw do
 
+  get '/tag/:name', to: 'tags#show', as: :tag
+
   resources :posts
-
-  resources :tags do
-    resources :posts
-  end
-
-  resources :posts do
-    resources :taggings
-  end
 
   namespace :admin do
     get '/users', to: 'users#index'
@@ -21,8 +15,6 @@ Soundtrackshare::Application.routes.draw do
   match "about" => 'welcome#about', via: :get
 
   match "search" => 'welcome#search', via: :get
-
-  get '/tag/:tagname', to: 'tags#show', as: :tag
 
   root to: 'welcome#index'
 

@@ -1,4 +1,2 @@
-
-development:
-  SENDGRID_USERNAME: "app18839405@heroku.com"
-  SENGRID_PASSWORD: "scnjfczq"
+SENDGRID_USERNAME: "app18839405@heroku.com"
+SENGRID_PASSWORD: "scnjfczq"
