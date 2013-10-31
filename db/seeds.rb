@@ -77,3 +77,5 @@ Post.create(url: "OWCB2DabJ04", user_id: 2, tag_list: "dramatic, epic")
 #8
 #Post.create(url: "oGx5P1N22pI")
 #Tagging.create(post_id: 8, tag_id: 9)
+
+Tag.find_by_name("epic").update_attribute("url", "KzlAE3Z-vcA?list=PLn6gIVVWkLcRLLmGbTq1ZViCU9qsau9ba")

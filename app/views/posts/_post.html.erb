@@ -1,5 +1,5 @@
 <div class="text-center post">
-  <small><%= link_to @username %></small>
+  <small><%= link_to post.user.name, user_path(post.user) %></small>
   <div class="video-container">
     <iframe allowFullScreen="true" allowscriptaccess="always" frameborder="0" height="430" src="http://www.youtube.com/embed/<%= post.url %>" title="YouTube video player" width="640"></iframe>
   </div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131024010002) do
+ActiveRecord::Schema.define(:version => 20131031003805) do
 
   create_table "posts", :force => true do |t|
     t.string   "url"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(:version => 20131024010002) do
 
   create_table "tags", :force => true do |t|
     t.string "name"
+    t.string "url"
   end
 
   create_table "users", :force => true do |t|

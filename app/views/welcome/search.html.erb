@@ -1,1 +1,11 @@
 <h1>Search</h1>
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:tags, "Tag Search:") %>
+  <%= text_field_tag(:tags) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<div class="text-center">
+<%= render @posts %>
+<%=  %>
+</div>
