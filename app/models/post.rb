@@ -7,7 +7,7 @@ class Post < ActiveRecord::Base
 
   # validates :url, must begin with "http://www.youtube.com/watch?v=", presence: true
   # validates :tag, presence: true
-  # validates :user, presence: true
+  validates :user, presence: true
 
   def self.search(search)
     if search

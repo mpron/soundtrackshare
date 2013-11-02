@@ -1,6 +1,16 @@
 <h1 class="text-center">New Post</h1>
 <%= form_for @post, html: {class: "form"} do |f| %>
-  <%= control_group_tag(post.errors[:url]) do %>
+  <% if @post.errors.any? %>
+    <div class="alert alert-block">
+      <h4>There are <%= pluralize(@post.errors.count, "error") %>.</h4>
+      <ul>
+        <% post.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= control_group_tag(@post.errors[:url]) do %>
     <div class="form-group">
       <%= f.label :url, class: 'control-label' %>
       <div class="controls col-lg-4">
@@ -8,11 +18,11 @@
       </div>
     </div>
   <% end %>
-  <%= control_group_tag(post.errors[:tag_list]) do %>
+  <%= control_group_tag(@post.errors[:tag_list]) do %>
     <div class="form-group">
       <%= f.label :tag_list, class: 'control-label' %>
       <div class="controls col-lg-10">
-        <%= f.text_area :tag_list, placeholder: "Tags (Comma-separated)" %>
+        <%= f.text_area :tag_list, placeholder: "Tags (Comma-separated)", rows: 1  %>
       </div>
     </div>
   <% end %>

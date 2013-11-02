@@ -1,7 +1,4 @@
 class PostsController < ApplicationController
-  def index 
-    #search results
-  end
 
   def new
     @post = Post.new
@@ -9,7 +6,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(params[:post])
+    @post = current_user.posts.build(params[:post])
     authorize! :create, @post, message: "You need create an account first."
     if @post.save
       flash[:notice] = "Post was saved successfully."

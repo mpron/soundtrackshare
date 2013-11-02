@@ -16,6 +16,8 @@ Soundtrackshare::Application.routes.draw do
 
   match "search" => 'welcome#search', via: :get
 
+  match "results" => 'welcome#results', via: :get
+
   root to: 'welcome#index'
 
   # The priority is based upon order of creation:
