@@ -6,7 +6,9 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = current_user.posts.build(params[:post])
+    @list = params[:post][:url].split("=")
+    @url = @list[1]
+    @post = current_user.posts.build(tag_list: params[:tag_list], url: @url)
     authorize! :create, @post, message: "You need create an account first."
     if @post.save
       flash[:notice] = "Post was saved successfully."

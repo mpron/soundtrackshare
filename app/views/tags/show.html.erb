@@ -6,10 +6,10 @@
 </div>
 </div>
 
-<%= @posts.inspect %>
-<% end %>
+<div><%= link_to "Share Track", new_post_path, class: 'btn btn-large btn-block' %></div>
 
 <div class="text-center">
 <%= render @posts %>
 <%= will_paginate @posts %>
 </div>
+<% end %>
