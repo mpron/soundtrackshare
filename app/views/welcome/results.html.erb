@@ -3,8 +3,12 @@
 <%= form_tag("/results", method: "get") do %>
   <%= label_tag(:tags, "Tag Search:") %>
   <%= text_field_tag(:tags) %>
+  <p>
+  Match <%= select_tag(:filter, options_for_select(
+  [['All', true], ['Any', false]])) %> of the Selected Tags
+</p>
   <%= submit_tag("Search") %>
 <% end %>
 
 <%= render @posts %>
-<%= will_paginate @posts %>
+<div class="text-center" ><%= will_paginate @posts %> </div>

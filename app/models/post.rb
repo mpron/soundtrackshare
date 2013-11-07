@@ -2,39 +2,38 @@ class Post < ActiveRecord::Base
   belongs_to :user
   acts_as_taggable_on :tags
   attr_accessible :url, :tag_list, :user_id
-  scope :by_join_date, order("created_at DESC")
+  default_scope order("created_at DESC")
+
+  VALID_TAGS = Tag.pluck("name")
 
   #before_validation :full_tags
-  #before_create :split_url
 
+  def formatted_url
+    # http://www.youtube.com/watch?v=abc123
+    url_split = url.split("?v=")
+    url_split.length > 1 ? url_split[1] : url
+  end
 
+  validates :url, :format => { :with => /youtube.com\/watch\?v=.{11}$/i,
+    :message => "Only use direct YouTube video page URLs please." }, presence: true
 
-   #validates :url, :format => { :with => /\Ayoutube.com\/watch?v=\z/,
-    #:message => "Only use direct YouTube video page URLs please." }, presence: true
-
-  # validates :tags, :inclusion => { :in => %w(full_tags),
-    #:message => "%{value} is not a valid tag" }
-
-  # validates :tags, :inclusion => { :in => lambda {||},
-    #:message => "%{value} is not a valid tag" }
+  validates :tag_list, :inclusion => { :in => ['epic', 'Epic'],
+    :message => "%{value} is not a valid tag" }
 
   validates :user, presence: true
 
-  def self.search(search)
-    if search
+  def self.search(search, filter)
+    if search && filter
+      Post.tagged_with(search, :match_all => true)
+    elsif search 
       Post.tagged_with(search, :any => true)
     end
   end
 
-  #def split_url
-    #snip = self.url.split("=")
-    #self.url = snip[1]
-  #end
-
-  #def full_tags
-    #ary = []
-    #Tag.all.each {|tag| tag.name << ary}
-    #ary.uniq
-  #end
+  def self.full_tags
+    ary = []
+    Tag.all.each {|tag| ary << tag.name }
+    ary
+  end
 
 end

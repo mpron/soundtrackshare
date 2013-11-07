@@ -4,12 +4,6 @@ class User < ActiveRecord::Base
     role.nil? ? false : ROLES.index(base_role.to_s) <= ROLES.index(role)
   end 
 
-  private
-
-  def set_member
-    self.role = 'member'
-  end
-
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -24,5 +18,10 @@ class User < ActiveRecord::Base
 
   before_create :set_member
 
+  private
+
+  def set_member
+    self.role = 'member'
+  end
 
 end

@@ -2,7 +2,67 @@
 <%= form_tag("/results", method: "get") do %>
   <%= label_tag(:tags, "Tag Search:") %>
   <%= text_field_tag(:tags) %>
+  <p>Match <%= select_tag(:filter, options_for_select(
+  [['All', true], ['Any', false]])) %> of the Selected Tags</p>
   <%= submit_tag("Search") %>
 <% end %>
 <br>
 <br>
+<div class="float-left" style="width: 600">
+  <h2 class="text-center">Moods</h2>
+  <p> 
+    <span class="tag">Adventure</span>
+    <span class="tag">Ambient</span>
+    <span class="tag">Angry</span>
+    <span class="tag">Battle</span>
+    <span class="tag">Bittersweet</span>
+    <span class="tag">Building</span>
+    <span class="tag">Celebration</span>
+    <span class="tag">Comedic</span>
+    <span class="tag">Confidence</span>
+    <span class="tag">Dramatic</span>
+    <span class="tag">Epic</span>
+    <span class="tag">Evil</span>
+    <span class="tag">Excitement</span>
+    <span class="tag">Exploring</span>
+    <span class="tag">Ending</span>
+    <span class="tag">Fantasy</span>
+  </p>
+</div>
+<div class="float-left" style="width: 350">
+  <h2 class="text-center">Featured Instrument / Sound</h2>
+  <p> 
+    <span class="tag">8-bit</span>
+    <span class="tag">Accordion</span>
+    <span class="tag">Acoustic Guitar</span>
+    <span class="tag">Brass</span>
+    <span class="tag">Choir</span>
+    <span class="tag">Children's Choir</span>
+    <span class="tag">Distortion</span>
+    <span class="tag">Drums</span>
+    <span class="tag">Electric</span>
+    <span class="tag">Electric Guitar</span>
+    <span class="tag">Female Vocal</span>
+    <span class="tag">Flute</span>
+    <span class="tag">Forging</span>
+    <span class="tag">Garage</span>
+    <span class="tag">Horn</span>
+    <span class="tag">Male Vocal</span>
+    <span class="tag">Strings</span>
+    <span class="tag">Trumpet</span>
+    <span class="tag">Violin</span>
+  </p>
+</div>
+<div class="float-left" style="width: 250">
+  <h2 class="text-center">Tempo / Rhythm</h2>
+  <p> 
+    <span class="tag">Anthem</span>
+    <span class="tag">Driving</span>
+    <span class="tag">Galloping</span>
+    <span class="tag">Lilting</span>
+    <span class="tag">March</span>
+    <span class="tag">Offbeat</span>
+    <span class="tag">Punchy</span>
+    <span class="tag">Thrash</span>
+  </p>
+</div>

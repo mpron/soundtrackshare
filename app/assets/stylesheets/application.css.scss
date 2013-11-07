@@ -1,13 +1,19 @@
 @import "bootstrap-custom";
 @import "bootstrap";
 
+
+
 .tag{
   background-color: #c2daeb;
   font-size: 17px;
   margin: 4px 4px 9px 1px;
   padding: 0.1em 0.8em;
-  line-height: 1.4;
+  line-height: 2;
   border-radius: 15px;
+}
+
+.float-left {
+  float: left;
 }
 
 /*.video-container {

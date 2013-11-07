@@ -1,6 +1,5 @@
-<div class="span2"></div>
-<div class="text-center span8">
-<header>
+<%= Tag.pluck("name") %>
+<header class="text-center col-md-offset-2 col-md-8 col-sm-12">
   <h1>SoundtrackShare.io</h1>
   <p>A soundtrack (OST) music discovery site that features curated soundtrack playlists categorized by mood and community posted tracks with granular tagging. 
   <% if current_user %>
@@ -12,12 +11,10 @@
   <p>Use the <%= link_to "advanced search", search_path %> for community submissions, or click on one of the mood categories below to find curated playlists.</p>
   <%= link_to "Share Track", new_post_path, class: 'btn btn-large btn-block' %>
 </header>
-<section>
-  <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-</section>
+<div class="row">
+
+  <div class="col-md-offset-2 col-md-8 col-sm-12">
+<p>Asymmetrical YOLO banjo lomo fanny pack, shoreditch flexitarian dreamcatcher ethnic kitsch sriracha nisi sustainable swag. Cliche 90's farm-to-table master cleanse Pinterest jean shorts. Cillum raw denim aesthetic sunt.</p>
+  </div>
+
 </div>
