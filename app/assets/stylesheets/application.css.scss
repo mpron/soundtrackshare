@@ -1,15 +1,21 @@
 @import "bootstrap-custom";
 @import "bootstrap";
 
-
+h1 {
+  font-weight: 700;
+}
 
 .tag{
   background-color: #c2daeb;
-  font-size: 17px;
+  font-weight: 700;
   margin: 4px 4px 9px 1px;
   padding: 0.1em 0.8em;
   line-height: 2;
   border-radius: 15px;
+}
+
+.square{
+  height: 156px;
 }
 
 .float-left {
