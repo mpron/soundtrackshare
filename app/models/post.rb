@@ -4,10 +4,7 @@ class Post < ActiveRecord::Base
   attr_accessible :url, :tag_list, :user_id
   default_scope order("created_at DESC")
 
-  #before_validation :full_tags
-
   def formatted_url
-    # http://www.youtube.com/watch?v=abc123
     url_split = url.split("?v=")
     url_split.length > 1 ? url_split[1] : url
   end
@@ -16,8 +13,7 @@ class Post < ActiveRecord::Base
     :message => "Only use direct YouTube video page URLs please." }, presence: true
 
   validates :user, presence: true
-
-  #validates :tags, presence: true
+  validates :tag_list, presence: true
 
   def self.search(search, filter)
     if search && filter

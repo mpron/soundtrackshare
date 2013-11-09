@@ -6,13 +6,16 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = current_user.posts.build(params[:post])
-    if params[:post][:tag_list].split(",").count > 1
-      params[:post][:tag_list].split(",").each do |tag|
-        @post.tag_list.add(tag) if Post.all_tags.include? tag
-      else
-    end
-      @post.tag_list.add(params[:tag_list]) if Post.all_tags.include? params[:tag_list]
+    @post = Post.new
+    @post.user_id = current_user.id
+    @post.url = params[:post][:url]
+    @post.save
+
+    tags = params[:post][:tag_list].split(",").map(&:lstrip)
+    tag_names = Tag.all.map{|t| t.name}
+
+    tags.each do |tag|
+      @post.tag_list.add(tag) if tag_names.include? tag
     end
 
     authorize! :create, @post, message: "You need create an account first."
