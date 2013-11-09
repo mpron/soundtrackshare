@@ -20,58 +20,60 @@ u.save
 #Post and Tag Seeds
 
 #1
-Post.create(url: "75QC59i-dIY", user_id: 1, tag_list: "fantasy, adventure, orchestral, exploring")
+Post.create(url: "http://www.youtube.com/watch?v=75QC59i-dIY", user_id: 1, tag_list: "fantasy, adventure, orchestral, exploring")
 
 #2
-Post.create(url: "PWlLp5riuzk", user_id: 1, tag_list: "battle, epic")
+Post.create(url: "http://www.youtube.com/watch?v=PWlLp5riuzk", user_id: 1, tag_list: "battle, epic")
 
 #3
-Post.create(url: "OWCB2DabJ04", user_id: 2, tag_list: "dramatic, epic")
+Post.create(url: "http://www.youtube.com/watch?v=OWCB2DabJ04", user_id: 2, tag_list: "dramatic, epic")
 
 #4
-Post.create(url: "WzljtlGj_lA", user_id: 1, tag_list: "excitement")
+Post.create(url: "http://www.youtube.com/watch?v=WzljtlGj_lA", user_id: 1, tag_list: "excitement")
 
 #5
-Post.create(url: "2cKXHVgH40Q", user_id: 1, tag_list: "happy, excitement")
+Post.create(url: "http://www.youtube.com/watch?v=2cKXHVgH40Q", user_id: 1, tag_list: "happy, excitement")
 
 #6
-Post.create(url: "vLVyhWDnSOI", user_id: 1, tag_list: "inspirational")
+Post.create(url: "http://www.youtube.com/watch?v=vLVyhWDnSOI", user_id: 1, tag_list: "inspirational")
 
 #7
-Post.create(url: "DT8S9rOd2zM", user_id: 1, tag_list: "sadness, epic, dramatic")
+Post.create(url: "http://www.youtube.com/watch?v=DT8S9rOd2zM", user_id: 1, tag_list: "sadness, epic, dramatic")
 
 #8
-Post.create(url: "oGx5P1N22pI", user_id: 1, tag_list: "tension")
+Post.create(url: "http://www.youtube.com/watch?v=oGx5P1N22pI", user_id: 1, tag_list: "tension")
 
 #9
-Post.create(url: "DT8S9rOd2zM", user_id: 1, tag_list: "sadness, bittersweet, love, romance")
+Post.create(url: "http://www.youtube.com/watch?v=DT8S9rOd2zM", user_id: 1, tag_list: "sadness, bittersweet, love, romance")
 
 #10
-Post.create(url: "K5tsfpLm4F4", user_id: 1, tag_list: "bravery, confidence, battle, violin, driving")
+Post.create(url: "http://www.youtube.com/watch?v=K5tsfpLm4F4", user_id: 1, tag_list: "bravery, confidence, battle, violin, driving")
 
 #11
-Post.create(url: "nNDFN2f07XQ", user_id: 1, tag_list: "orchestral, distortion, evil, dramatic, guitar")
+Post.create(url: "http://www.youtube.com/watch?v=nNDFN2f07XQ", user_id: 1, tag_list: "orchestral, distortion, evil, dramatic, guitar")
 
 #12
-Post.create(url: "cqTVWJeixNI", user_id: 1, tag_list: "haunting, marimba")
+Post.create(url: "http://www.youtube.com/watch?v=cqTVWJeixNI", user_id: 1, tag_list: "haunting, marimba")
 
 #13
-Post.create(url: "YdgF63xKTe0", user_id: 1, tag_list: "hope, possibilities, adventure, dramatic, piano, flying")
+Post.create(url: "http://www.youtube.com/watch?v=YdgF63xKTe0", user_id: 1, tag_list: "hope, possibilities, adventure, dramatic, piano, flying")
 
 #14
-Post.create(url: "eJ5IfryrCVs", user_id: 1, tag_list: "inspirational, sports, forging")
+Post.create(url: "http://www.youtube.com/watch?v=eJ5IfryrCVs", user_id: 1, tag_list: "inspirational, sports, forging")
 
 #15
-Post.create(url: "lOPaw9B63hw", user_id: 1, tag_list: "driving, orchestral, dramatic, strings, melancholy, tension")
+Post.create(url: "http://www.youtube.com/watch?v=lOPaw9B63hw", user_id: 1, tag_list: "driving, orchestral, dramatic, strings, melancholy, tension")
 
 #16
-Post.create(url: "M5LMP2NaZSg", user_id: 1, tag_list: "nostalgia, piano, love, bittersweet, ending, orchestral")
+Post.create(url: "http://www.youtube.com/watch?v=M5LMP2NaZSg", user_id: 1, tag_list: "nostalgia, piano, love, bittersweet, ending, orchestral")
 
 #17
-Post.create(url: "7mxtY8ytEO0", user_id: 1, tag_list: "hope, melancholy, sadness, piano")
+Post.create(url: "http://www.youtube.com/watch?v=7mxtY8ytEO0", user_id: 1, tag_list: "hope, melancholy, sadness, piano")
 
 #18
-Post.create(url: "dclghhnW4oU", user_id: 1, tag_list: "8-bit, adventure, confidence")
+Post.create(url: "http://www.youtube.com/watch?v=dclghhnW4oU", user_id: 1, tag_list: "8-bit, adventure, confidence")
+
+#19
 
 #############
 
@@ -96,4 +98,5 @@ Tag.find_by_name("nostalgia").update_attribute("url", "t_FmaQiQcNE?list=PLn6gIVV
 Tag.find_by_name("possibilities").update_attribute("url", "c2T2knomWqQ?list=PLn6gIVVWkLcT2Do_xNRcwMEu-ZtB4bXuW")
 Tag.find_by_name("romance").update_attribute("url", "DT8S9rOd2zM?list=PLn6gIVVWkLcRBCG3u7XTyLgjkBWtMgjbJ")
 Tag.find_by_name("sadness").update_attribute("url", "7mxtY8ytEO0?list=PLn6gIVVWkLcT6hcpCHlmE2G9kSpFQm7F4")
-Tag.find_by_name("tension").update_attribute("url", "/g8Pj6EoTGTc?list=PLn6gIVVWkLcTZiSrA9_htaguWI7WSFFVX")
+Tag.find_by_name("tension").update_attribute("url", "g8Pj6EoTGTc?list=PLn6gIVVWkLcTZiSrA9_htaguWI7WSFFVX")
+
