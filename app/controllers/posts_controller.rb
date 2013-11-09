@@ -7,6 +7,14 @@ class PostsController < ApplicationController
 
   def create
     @post = current_user.posts.build(params[:post])
+    if params[:post][:tag_list].split(",").count > 1
+      params[:post][:tag_list].split(",").each do |tag|
+        @post.tag_list.add(tag) if Post.all_tags.include? tag
+      else
+    end
+      @post.tag_list.add(params[:tag_list]) if Post.all_tags.include? params[:tag_list]
+    end
+
     authorize! :create, @post, message: "You need create an account first."
     if @post.save
       flash[:notice] = "Post was saved successfully."

@@ -1,5 +1,4 @@
-<%= Tag.pluck("name") %>
-<header class="text-center col-md-offset-2 col-md-8 col-sm-12">
+<header class="text-center col-sm-offset-2 col-sm-8 col-xs-12">
   <h1>SoundtrackShare.io</h1>
   <p>A soundtrack (OST) music discovery site that features curated soundtrack playlists categorized by mood and community posted tracks with granular tagging. 
   <% if current_user %>
@@ -13,13 +12,13 @@
 </header>
 <div class="row">
 
-  <div class="col-md-offset-2 col-md-8 col-sm-12">
-    <div class="col-md-2 col-xs-12 square float-left" style="color: #87c032;"></div>
-    <div class="col-md-2 col-xs-12 square float-left" style="color: #628179;"></div>
-    <div class="col-md-2 col-xs-12 square float-left" style="color: #21aabd;"></div>
-    <div class="col-md-2 col-xs-12 square float-left" style="color: #654b6b;"></div>
-    <div class="col-md-2 col-xs-12 square float-left" style="color: #bd2a4e;"></div>
-    <div class="col-md-2 col-xs-12 square float-left" style="color: #ff9d00;"></div>
+  <div class="col-md-offset-1 col-md-10 col-sm-offset-2 col-sm-10 col-xs-12">
+    <div class="col-md-3 col-sm-5 col-xs-12 mood-button float-left" style="background-color: #87c032;" href="/tag/epic">epic</div>
+    <div class="col-md-3 col-sm-5 col-xs-12 mood-button float-left" style="background-color: #628179;"></div>
+    <div class="col-md-3 col-sm-5 col-xs-12 mood-button float-left" style="background-color: #21aabd;"></div>
+    <div class="col-md-3 col-sm-5 col-xs-12 mood-button float-left" style="background-color: #654b6b;"></div>
+    <div class="col-md-3 col-sm-5 col-xs-12 mood-button float-left" style="background-color: #bd2a4e;"></div>
+    <div class="col-md-3 col-sm-5 col-xs-12 mood-button float-left" style="background-color: #ff9d00;"></div>
 
   </div>
 

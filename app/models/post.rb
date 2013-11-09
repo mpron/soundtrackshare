@@ -1,15 +1,3 @@
-class TagValidator < ActiveModel::Validator
-  def validate(tag_list)
-    all_tags = Tag.all.map{|t| t.name}
-    tag_list.split(",").each do |tag|
-      return false unless all_tags.include?(tag)
-      #@post.tag_list.add(tag) if all_tags.include? tag
-    end
-    true
-  end
-end
-
-
 class Post < ActiveRecord::Base
   belongs_to :user
   acts_as_taggable_on :tags
@@ -28,6 +16,8 @@ class Post < ActiveRecord::Base
     :message => "Only use direct YouTube video page URLs please." }, presence: true
 
   validates :user, presence: true
+
+  #validates :tags, presence: true
 
   def self.search(search, filter)
     if search && filter
