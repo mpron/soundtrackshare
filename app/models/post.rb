@@ -16,9 +16,9 @@ class Post < ActiveRecord::Base
   validates :tag_list, presence: true
 
   def self.search(search, filter)
-    if search && filter
+    if search && filter == "true"
       Post.tagged_with(search, :match_all => true)
-    elsif search 
+    elsif search
       Post.tagged_with(search, :any => true)
     end
   end

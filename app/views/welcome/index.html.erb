@@ -1,6 +1,7 @@
+<div class="container">
 <header class="text-center col-sm-offset-2 col-sm-8 col-xs-12">
   <h1>SoundtrackShare.io</h1>
-  <p>A soundtrack (OST) music discovery site that features curated soundtrack playlists categorized by mood and community posted tracks with granular tagging. 
+  <p>A soundtrack (OST) music discovery site that features curated soundtrack playlists categorized by mood and community posted tracks with granular tagging. <br>
   <% if current_user %>
   <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
   <% else %>
@@ -9,16 +10,20 @@
   </p>
   <p>Use the <%= link_to "advanced search", search_path %> for community submissions, or click on one of the mood categories below to find curated playlists.</p>
 </header>
+</div>
+<br>
 
+<div class="container">
 <div class="row">
-  <div class="col-md-offset-2 col-md-3" style="margin: 20px 0px; float: left;">  
+  <div class="col-md-offset-5 col-sm-offset-3 col-xs-12">
     <%= link_to "Share Track", new_post_path, class: "btn btn-success btn-lg" %>
   </div>
 </div>
-
+</div>
+<br>
 <div class="row">
 
-  <div class="col-md-offset-1 col-md-10 col-sm-offset-2 col-sm-10 col-xs-12">
+  <div class="col-md-offset-1 col-sm-offset-2 col-sm-10 col-xs-12">
     
     <%= link_to tag_path(name: "adventure"), class: "white-text" do %>
       <div class="mood-button" style="background-color: #2ecc71;">Adventure</div>
