@@ -1,11 +1,11 @@
 <h1 class="text-center">Sign up</h1>
 <div class="container">
+  <div class="formbox text-center">
+    <small>Sign up to join the community and share OST tracks from YouTube that you like. Use a spam address if you want. I don't really care about your personal info.</small>
+  </div>
   <div class="formbox">
     <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:role => 'form', class: "form"}) do |f| %>
     <%= devise_error_messages! %>
-      <div class="container">
-        <small class="text-center">Sign up to join the community and share OST tracks from YouTube that you like. <br>Use a spam address if you want. I don't really care about your personal info.</small>
-      </div>
       <div class="row">
         <div class="form-group">
           <%= f.text_field :name, :autofocus => true, class: "form-control input-lg", :placeholder => "Username" %>

@@ -1,6 +1,7 @@
 <h1 class="text-center">User Posts</h1>
-<div class="row text-center">
-
+<div class="container text-center">
+  <div class="videobox">
     <%= render @posts %>
-    <%= will_paginate @posts %>
+  </div>
+  <%= will_paginate @posts %>
 </div>

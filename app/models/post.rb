@@ -17,7 +17,7 @@ class Post < ActiveRecord::Base
 
   def self.search(search, filter)
     if search && filter == "true"
-      Post.tagged_with(search, :match_all => true)
+      Post.tagged_with(search)
     elsif search
       Post.tagged_with(search, :any => true)
     end

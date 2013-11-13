@@ -8,9 +8,13 @@
       <%= text_field_tag(:tags, nil, class: "form-control input-lg", placeholder: "Tags (comma-separated)") %>
       <br>
       <p class="text-center">Match <%= select_tag(:filter, options_for_select(
-      [['All', true], ['Any', false]])) %> of the Selected Tags</p>
-
-      <%= submit_tag("Search", class: "form-control btn btn-primary btn-lg") %>
+      [['Any', false], ['All', true]])) %> of the Selected Tags
+    </p>
+    <br>
+    <%= submit_tag("Search", class: "form-control btn btn-primary btn-lg") %>
+    <button type="button" class="btn btn-lg form-control">
+      <%= link_to "Back to the Home Page", root_path %>
+    </button>
 
     <% end %>
       </div>
