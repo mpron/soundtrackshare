@@ -1,5 +1,6 @@
 @import "bootstrap-custom";
 @import "bootstrap";
+@import "welcome";
 
 h1 {
   font-weight: 700;
@@ -29,38 +30,6 @@ p {
   padding: 0.1em 0.8em;
   line-height: 2;
   border-radius: 15px;
-}
-
-.mood-button {
-
-  @extend .col-md-3;
-
-  @extend .col-xs-12;
-
-  float: left;
-  font-size: 2.1em;
-  font-weight: 400;
-  height: 175px;
-  padding: 52px 0px;
-  text-align: center;
-}
-
-.mood-button:hover {
-  
-  color: #141414;
-  text-decoration: none;
-
-  -webkit-filter: grayscale(70%);
-
-  -webkit-transition: all 0.3s linear;
-        transition: all 0.3s linear;
-}
-
-
-a.white-text {
-  font-color: #fff;
-  color: #fff;
-  text-decoration: none;  
 }
 
 .videobox {
@@ -94,21 +63,3 @@ a.white-text {
   height: 100%;
 }*/
 
-/*@media (min-width: 0px) { 
-  body{font-size: 260%;}
-}
-
-@media (min-width: 700px) { 
-  body{font-size: 160%;}
-  p{font-size: 1.2em;}
-}
-
-@media (min-width: 937px) { 
-  body{font-size: 200%;}
-  p{font-size: 1em;}
-}
-
-@media (min-width: 1160px) { 
-  body{font-size: 200%;}
-  p{font-size: 1em;}
-}*/
