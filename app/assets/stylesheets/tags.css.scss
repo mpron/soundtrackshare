@@ -1,3 +1,10 @@
 // Place all the styles related to the Tags controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@media (min-width: 0px) {
+  .tag {border-radius: 30px;}
+}
+
+@media (min-width: 992px) {
+  .tag {border-radius: 15px;}
+}

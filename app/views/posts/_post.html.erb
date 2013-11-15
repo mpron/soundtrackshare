@@ -1,5 +1,5 @@
-<div class="text-center post">
-  <small><%= link_to post.user.name, user_path(post.user) %></small>
+<div class="text-center">
+  <small>Shared by <%= link_to post.user.name, user_path(post.user) %></small>
   <div class="video-container">
     <iframe allowFullScreen="true" allowscriptaccess="always" frameborder="0" height="430" src="http://www.youtube.com/embed/<%= post.formatted_url %>" title="YouTube video player" width="640"></iframe>
   </div>
@@ -7,9 +7,9 @@
     <span class="tag"><%= t.capitalize %></span>
     <% end %>
   </p>
-  <p>
+  <div id="margin-bottom">
     <% if can? :destroy, post %>
     <%= link_to "Delete Post", post, method: :delete, class: 'btn btn-danger', confirm: 'Are you sure you want to delete this post?' %>
     <% end %>
-  </p>
+  </div>
 </div>
