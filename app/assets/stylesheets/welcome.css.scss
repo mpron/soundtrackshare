@@ -10,7 +10,7 @@
 .mood-button {
 
   @extend .col-md-3;
-  @extend .col-sm-6;
+
   @extend .col-xs-12;
 
   float: left;
@@ -54,29 +54,14 @@ a.white-text {
   }
 
   h1 {
-    font-size: 3em;
-  }
-
-  p {
-    font-size: 1.5em;
-  }
-}
-
-@media (min-width: 768px) { 
-  .mood-button {
-    font-size: 3.2em;
-    padding: 45px 0px;
-  }
-
-  h1 {
     font-size: 4.5em;
   }
 
   p {
     font-size: 1.5em;
   }
-
 }
+
 
 @media (min-width: 992px) { 
   .mood-button {

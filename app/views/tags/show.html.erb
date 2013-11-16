@@ -1,24 +1,21 @@
 <% if @tag %>
 <div class="container">
-  <div class="text-center">
-    <h1><%= params[:name].capitalize %></h1>
-    <div class="videobox">
-      <iframe allowFullScreen="true" allowscriptaccess="always" frameborder="0" height="430" src="http://www.youtube.com/embed/<%= @tag.url %>" title="YouTube video player" width="640"></iframe>
-    </div>
+  <h1 class="text-center"><%= params[:name].capitalize %></h1>
+  <div class="row">
+      <div class="videobox text-center">
+        <small><%= params[:name].capitalize %> Playlist</small>
+        <iframe allowFullScreen="true" allowscriptaccess="always" frameborder="0" height="430" src="http://www.youtube.com/embed/<%= @tag.url %>" title="YouTube video player" width="640"></iframe>
+      </div>
   </div>
-
-
   <div class="row">
     <div class="text-center formbox">
       <%= link_to "Share Track", new_post_path, class: "margin-space btn btn-success btn-lg btn-block" %>
     </div>
   </div>
 
-<div class="container text-center">
-  <div class="videobox">
+  <div class="row">
     <%= render @posts %>
+    <%= will_paginate @posts %>
   </div>
-  <%= will_paginate @posts %>
-</div>
-<% end %>
-</div>
+  <% end %>
+  </div>
