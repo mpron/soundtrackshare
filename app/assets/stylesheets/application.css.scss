@@ -41,6 +41,15 @@ p {
   width: 750px;
 }
 
+.tagbox {
+
+  border-radius: 15px;
+  background-color: #d5d5d5;
+  margin: auto;
+  padding: 22px;
+}
+
+
 .userbox {
   background-color: #d5d5d5;
   padding: 15px;
@@ -58,8 +67,17 @@ p {
   margin: 30px 0;
 }
 
-#margin-bottom {
-  margin-bottom: 60px;
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 30px;
+}
+
+#shared-by {
+  text-align: left; 
+  margin-left: 28px;
 }
 
 /*.video-container {
@@ -84,10 +102,54 @@ p {
   .btn-success {
     font-size: 4.1em;
   }
+  .btn-primary {
+    font-size: 4.1em;
+  }
+  .btn-info {
+    font-size: 4.1em;
+  }
+  .btn-default {
+    font-size: 3.5em;
+  }
+  .input-lg {
+    height: 85px;
+    font-size: 2.7em;
+  }
+  .devise-links {
+    font-size: 2.7em;
+  }
+  small {
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 3.7em;
+  }
 }
 
 @media (min-width: 992px) { 
   .btn-success {
     font-size: 2.1em;
+  }
+  .btn-primary {
+    font-size: 2.1em;
+  }
+  .btn-info {
+    font-size: 2.1em;
+  }
+  .btn-default {
+    font-size: 1.7em;
+  }
+  .input-lg {
+    height: 60px;
+    font-size: 1.6em;
+  }
+  .devise-links {
+    font-size: 1em;
+  }
+  small {
+    font-size: 0.8em;
+  }
+  h2 {
+    font-size: 2.7em;
   }
 }

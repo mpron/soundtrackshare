@@ -6,76 +6,81 @@
         <div class="row">
           <%= text_field_tag(:tags, nil, class: "form-control input-lg", placeholder: "Tags (comma-separated)") %>
         </div>
-        <br>
-        <p class="text-center">
+
+        <p class="text-center margin-space">
           Match <%= select_tag(:filter, options_for_select(
             [['Any', false], ['All', true]])) %> of the Selected Tags
         </p>
-        <br>
+
         <div class="row">
           <%= submit_tag("Search", class: "btn btn-block btn-primary btn-lg") %>
         </div>
-        <%= link_to "Back to the Home Page", root_path, class: "btn btn-block btn-lg btn-default" %>
+        <div class="row">
+          <button type="button" class="btn btn-block btn-default btn-lg margin-bottom-2">
+            <%= link_to "Back to the Home Page", root_path %>
+          </button>
+        </div>
       <% end %>
     </div>
   </div>
-  <br>
-  <br>
-  <div style="float: left;">
-    <h2 class="text-center">Moods</h2>
-    <p> 
-      <span class="tag">Adventure</span>
-      <span class="tag">Ambient</span>
-      <span class="tag">Angry</span>
-      <span class="tag">Battle</span>
-      <span class="tag">Bittersweet</span>
-      <span class="tag">Building</span>
-      <span class="tag">Celebration</span>
-      <span class="tag">Comedic</span>
-      <span class="tag">Confidence</span>
-      <span class="tag">Dramatic</span>
-      <span class="tag">Epic</span>
-      <span class="tag">Evil</span>
-      <span class="tag">Excitement</span>
-      <span class="tag">Exploring</span>
-      <span class="tag">Ending</span>
-      <span class="tag">Fantasy</span>
-    </p>
-  
-    <h2 class="text-center">Featured Instrument / Sound</h2>
-    <p> 
-      <span class="tag">8-bit</span>
-      <span class="tag">Accordion</span>
-      <span class="tag">Acoustic Guitar</span>
-      <span class="tag">Brass</span>
-      <span class="tag">Choir</span>
-      <span class="tag">Children's Choir</span>
-      <span class="tag">Distortion</span>
-      <span class="tag">Drums</span>
-      <span class="tag">Electric</span>
-      <span class="tag">Electric Guitar</span>
-      <span class="tag">Female Vocal</span>
-      <span class="tag">Flute</span>
-      <span class="tag">Forging</span>
-      <span class="tag">Garage</span>
-      <span class="tag">Horn</span>
-      <span class="tag">Male Vocal</span>
-      <span class="tag">Strings</span>
-      <span class="tag">Trumpet</span>
-      <span class="tag">Violin</span>
-    </p>
-
-    <h2 class="text-center">Tempo / Rhythm</h2>
-    <p> 
-      <span class="tag">Anthem</span>
-      <span class="tag">Driving</span>
-      <span class="tag">Galloping</span>
-      <span class="tag">Lilting</span>
-      <span class="tag">March</span>
-      <span class="tag">Offbeat</span>
-      <span class="tag">Punchy</span>
-      <span class="tag">Thrash</span>
-    </p>
-  </div>
+<div style="float: left;">
+  <h2 class="text-center">Moods</h2>
+    <div class="tagbox margin-bottom-2">
+      <p> 
+        <span class="tag">Adventure</span>
+        <span class="tag">Ambient</span>
+        <span class="tag">Angry</span>
+        <span class="tag">Battle</span>
+        <span class="tag">Bittersweet</span>
+        <span class="tag">Building</span>
+        <span class="tag">Celebration</span>
+        <span class="tag">Comedic</span>
+        <span class="tag">Confidence</span>
+        <span class="tag">Dramatic</span>
+        <span class="tag">Epic</span>
+        <span class="tag">Evil</span>
+        <span class="tag">Excitement</span>
+        <span class="tag">Exploring</span>
+        <span class="tag">Ending</span>
+        <span class="tag">Fantasy</span>
+      </p>
+    </div>
+  <h2 class="text-center">Featured Instrument / Sound</h2>
+    <div class="tagbox margin-bottom-2">
+      <p> 
+        <span class="tag">8-bit</span>
+        <span class="tag">Accordion</span>
+        <span class="tag">Acoustic Guitar</span>
+        <span class="tag">Brass</span>
+        <span class="tag">Choir</span>
+        <span class="tag">Children's Choir</span>
+        <span class="tag">Distortion</span>
+        <span class="tag">Drums</span>
+        <span class="tag">Electric</span>
+        <span class="tag">Electric Guitar</span>
+        <span class="tag">Female Vocal</span>
+        <span class="tag">Flute</span>
+        <span class="tag">Forging</span>
+        <span class="tag">Garage</span>
+        <span class="tag">Horn</span>
+        <span class="tag">Male Vocal</span>
+        <span class="tag">Strings</span>
+        <span class="tag">Trumpet</span>
+        <span class="tag">Violin</span>
+      </p>
+    </div>
+  <h2 class="text-center">Tempo / Rhythm</h2>
+    <div class="tagbox margin-bottom-2">
+      <p> 
+        <span class="tag">Anthem</span>
+        <span class="tag">Driving</span>
+        <span class="tag">Galloping</span>
+        <span class="tag">Lilting</span>
+        <span class="tag">March</span>
+        <span class="tag">Offbeat</span>
+        <span class="tag">Punchy</span>
+        <span class="tag">Thrash</span>
+      </p>
+    </div>
   </div>
 </div>
