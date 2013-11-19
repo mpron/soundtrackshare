@@ -7,6 +7,7 @@
       <iframe allowFullScreen="true" allowscriptaccess="always" frameborder="0" height="430" src="http://www.youtube.com/embed/<%= @tag.url %>" title="YouTube video player" width="640"></iframe>
     </div>
   </div>
+
   <div class="row">
     <div class="text-center formbox">
       <%= link_to "Share Track", new_post_path, class: "margin-space btn btn-success btn-lg btn-block" %>
@@ -15,11 +16,9 @@
       <h4>Community Submissions</h4>
     </div>
   </div>
-
-  <div class="row">
-    <%= render @posts %>
-    <div class="text-center">
-      <%= will_paginate @posts %>
-    </div>
+  <%= render @posts %>
+  <div class="text-center">
+    <%= will_paginate @posts %>
   </div>
   <% end %>
+</div>
