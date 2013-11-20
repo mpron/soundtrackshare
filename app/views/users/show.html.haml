@@ -1,0 +1,14 @@
+.container
+  %h1.text-center
+    = @username
+    Shares
+  .row
+    .text-center.formbox
+      = link_to "Back to the Home Page", root_path, class: "margin-space btn btn-block btn-default btn-lg"
+    .text-center.formbox
+      %h4 Community Submissions
+  .text-center
+    = render @posts
+  .text-center.formbox
+    = link_to "Back to the Home Page", root_path, class: "margin-space-2 btn btn-block btn-default btn-lg"
+    = will_paginate @posts
