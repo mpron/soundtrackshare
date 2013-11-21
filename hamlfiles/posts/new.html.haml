@@ -1,0 +1,120 @@
+<h1 class="text-center">New Post</h1>
+<div class="container">
+  <div class="formbox">
+    <%= form_for @post, html: {class: "form"} do |f| %>
+    <% if @post.errors.any? %>
+      <div class="alert alert-block">
+        <h4>Found <%= pluralize(@post.errors.count, "error") %>.</h4>
+        <ul>
+          <% @post.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <%= control_group_tag(@post.errors[:url]) do %>
+      <div class="row">
+        <div class="form-group">
+          <%= f.text_field :url, :autofocus => true, class: "form-control input-lg", placeholder: "YouTube URL" %>
+        </div>
+      </div>
+    <% end %>
+    <%= control_group_tag(@post.errors[:tag_list]) do %>
+      <div class="row">
+        <div class="form-group">
+          <%= f.text_area :tag_list, class: "form-control input-lg", placeholder: "Tags (Comma-separated)", rows: 1  %>
+        </div>
+      </div>
+    <% end %>
+      <div class="row">
+        <div class="form-group">
+        <%= f.submit "Save", class: 'btn btn-block btn-large btn-info margin-bottom-2' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div style="float: left;">
+    <h2 class="text-center">Moods</h2>
+    <div class="tagbox margin-bottom-2">
+      <p> 
+        <span class="tag">Adventure</span>
+        <span class="tag">Ambient</span>
+        <span class="tag">Angry</span>
+        <span class="tag">Battle</span>
+        <span class="tag">Bittersweet</span>
+        <span class="tag">Building</span>
+        <span class="tag">Celebration</span>
+        <span class="tag">Comedic</span>
+        <span class="tag">Confidence</span>
+        <span class="tag">Dramatic</span>
+        <span class="tag">Epic</span>
+        <span class="tag">Evil</span>
+        <span class="tag">Excitement</span>
+        <span class="tag">Exploring</span>
+        <span class="tag">Ending</span>
+        <span class="tag">Fantasy</span>
+        <span class="tag">Flying</span>
+        <span class="tag">Happy</span>
+        <span class="tag">Haunting</span>
+        <span class="tag">Hope</span>
+        <span class="tag">Inspirational</span>
+        <span class="tag">Kabuki</span>
+        <span class="tag">Medieval</span>
+        <span class="tag">Melancholy</span>
+        <span class="tag">Mysterious</span>
+        <span class="tag">Nostalgia</span>
+        <span class="tag">Possibilities</span>
+        <span class="tag">Preparing</span>
+        <span class="tag">Relaxed</span>
+        <span class="tag">Romance</span>
+        <span class="tag">Sadness</span>
+        <span class="tag">Sci-Fi</span>
+        <span class="tag">Space</span>
+        <span class="tag">Sports</span>
+        <span class="tag">Tension</span>
+        <span class="tag">Tribal</span>
+        <span class="tag">Victorian</span>
+        <span class="tag">Village</span>
+        <span class="tag">Western</span>
+      </p>
+    </div>
+    <h2 class="text-center">Featured Instrument / Sound</h2>
+    <div class="tagbox margin-bottom-2">
+      <p> 
+        <span class="tag">8-bit</span>
+        <span class="tag">Accordion</span>
+        <span class="tag">Acoustic Guitar</span>
+        <span class="tag">Brass</span>
+        <span class="tag">Choir</span>
+        <span class="tag">Children's Choir</span>
+        <span class="tag">Distortion</span>
+        <span class="tag">Drums</span>
+        <span class="tag">Electric</span>
+        <span class="tag">Electric Guitar</span>
+        <span class="tag">Female Vocal</span>
+        <span class="tag">Flute</span>
+        <span class="tag">Forging</span>
+        <span class="tag">Garage</span>
+        <span class="tag">Horn</span>
+        <span class="tag">Male Vocal</span>
+        <span class="tag">Marimba</span>
+        <span class="tag">Strings</span>
+        <span class="tag">Trumpet</span>
+        <span class="tag">Violin</span>
+      </p>
+    </div>
+    <h2 class="text-center">Tempo / Rhythm</h2>
+    <div class="tagbox margin-bottom-2">
+      <p> 
+        <span class="tag">Anthem</span>
+        <span class="tag">Driving</span>
+        <span class="tag">Galloping</span>
+        <span class="tag">Lilting</span>
+        <span class="tag">March</span>
+        <span class="tag">Offbeat</span>
+        <span class="tag">Punchy</span>
+        <span class="tag">Thrash</span>
+      </p>
+    </div>
+  </div>
+</div>
