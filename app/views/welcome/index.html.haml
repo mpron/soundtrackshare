@@ -1,0 +1,70 @@
+#fb-root
+:javascript
+  (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=361095707370305"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
+
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+.container
+  %h1.text-center SoundtrackShare.io
+  .row
+    %header.text-center.col-md-offset-2.col-md-8
+      %p A soundtrack (OST) music discovery site that features curated soundtrack playlists categorized by mood and community posted tracks with granular tagging.
+      %p
+        - if current_user
+          = link_to "Sign Out", destroy_user_session_path, method: :delete
+        - else
+          = link_to "Sign In", new_user_session_path
+          or #{link_to "Sign Up", new_user_registration_path} to share!
+        | #{link_to "About", about_path}
+      .fb-share-button{"data-href" => "http://soundtrackshare.herokuapp.com/", "data-type" => "button", "data-width" => "60"}
+      %p
+        %a.twitter-share-button{"data-count" => "none", "data-lang" => "en", "data-size" => "large", href: "https://twitter.com/share"} Tweet
+      %p
+        Use the #{link_to "advanced search", search_path} for finding community submitted tracks by mood, or click on one of the mood categories below to find curated playlists.
+      - if can? :read, User
+        %p= link_to "All Users", admin_users_path
+  .row
+    .text-center.formbox
+      = link_to "Share Track", new_post_path, class: "margin-space btn btn-success btn-lg btn-block"
+  .row
+    #mood-box.text-center
+      = link_to tag_path(name: "adventure"), class: "white-text" do
+        .mood-button{style: "background-color: #2ecc71;"} Adventure
+      = link_to tag_path(name: "sadness"), class: "white-text" do
+        .mood-button{style: "background-color: #3498db;"} Sadness
+      = link_to tag_path(name: "epic"), class: "white-text" do
+        .mood-button{style: "background-color: #f1c40f;"} Epic
+      = link_to tag_path(name: "battle"), class: "white-text" do
+        .mood-button{style: "background-color: #e74c3c;"} Battle
+      = link_to tag_path(name: "inspirational"), class: "white-text" do
+        .mood-button{style: "background-color: #27ae60;"} Inspirational
+      = link_to tag_path(name: "bittersweet"), class: "white-text" do
+        .mood-button{style: "background-color: #2980b9;"} Bittersweet
+      = link_to tag_path(name: "excitement"), class: "white-text" do
+        .mood-button{style: "background-color: #f39c12;"} Excitement
+      = link_to tag_path(name: "dramatic"), class: "white-text" do
+        .mood-button{style: "background-color: #c0392b;"} Dramatic
+      = link_to tag_path(name: "possibilities"), class: "white-text" do
+        .mood-button{style: "background-color: #30a14e;"} Possibilities
+      = link_to tag_path(name: "melancholy"), class: "white-text" do
+        .mood-button{style: "background-color: #348fad;"} Melancholy
+      = link_to tag_path(name: "hope"), class: "white-text" do
+        .mood-button{style: "background-color: #e67e22;"} Hope
+      = link_to tag_path(name: "confidence"), class: "white-text" do
+        .mood-button{style: "background-color: #b3363c;"} Confidence
+      = link_to tag_path(name: "happy"), class: "white-text" do
+        .mood-button{style: "background-color: #158f2e;"} Happy
+      = link_to tag_path(name: "haunting"), class: "white-text" do
+        .mood-button{style: "background-color: #17839c;"} Haunting
+      = link_to tag_path(name: "nostalgia"), class: "white-text" do
+        .mood-button{style: "background-color: #d35400;"} Nostalgia
+      = link_to tag_path(name: "romance"), class: "white-text" do
+        .mood-button{style: "background-color: #a11828;"} Romance
+      = link_to tag_path(name: "exploring"), class: "white-text" do
+        .mood-button{style: "background-color: #2ecc71;"} Exploring
+      = link_to tag_path(name: "mysterious"), class: "white-text" do
+        .mood-button{style: "background-color: #3498db;"} Mysterious
+      = link_to tag_path(name: "tension"), class: "white-text" do
+        .mood-button{style: "background-color: #f1c40f;"} Tension
+      = link_to tag_path(name: "evil"), class: "white-text" do
+        .mood-button{style: "background-color: #e74c3c;"} Evil

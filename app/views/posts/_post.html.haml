@@ -1,0 +1,13 @@
+.row
+  .videobox
+    #shared-by
+      %small
+        Shared by #{link_to post.user.name, user_path(post.user)}
+    .text-center
+      %iframe{allowfullscreen: "true", allowscriptaccess: "always", frameborder: "0", height: "430", src: "http://www.youtube.com/embed/#{post.formatted_url}", title: "YouTube video player", width: "640"}
+      %p
+        - post.tag_list.each do |t|
+          %span.tag= t.capitalize
+  .text-center.margin-bottom
+    - if can? :destroy, post
+      = link_to "Delete Post", post, method: :delete, class: 'btn btn-danger margin-space', confirm: 'Are you sure you want to delete this post?'

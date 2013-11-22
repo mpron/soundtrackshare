@@ -1,0 +1,18 @@
+.container
+  %h1.text-center Results
+  .formbox
+    %p.text-center If you didn't find any tracks, go back and try using a less strict search. Some tag combinations won't yield any results.
+    .form-group
+      = form_tag("/results", method: "get") do
+        .row
+          = text_field_tag(:tags, nil, class: "form-control input-lg", placeholder: "Tags (comma-separated)")
+        %p.text-center.margin-space
+          Match #{select_tag(:filter, options_for_select( [['Any', false], ['All', true]]))} of the Selected Tags
+        .row
+          = submit_tag("Search", class: "btn btn-block btn-primary btn-lg")
+        .row
+          %button.btn.btn-block.btn-default.btn-lg.margin-bottom-2{type: "button"}
+            = link_to "Back to Search Page", search_path
+.container
+  = render @posts
+  .text-center= will_paginate @posts

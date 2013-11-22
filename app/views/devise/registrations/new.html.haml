@@ -1,0 +1,22 @@
+.container
+  %h1.text-center Sign up
+  .row.margin-space
+    .formbox.text-center
+      %small
+        Sign up to join the community and share OST tracks from YouTube that you like. Use a spam address if you want. I don't really care about your personal info.
+  .formbox
+    = form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:role => 'form', class: "form"}) do |f|
+      = devise_error_messages!
+      .row.form-group
+        = f.text_field :name, :autofocus => true, class: "form-control input-lg", :placeholder => "Username"
+      .row.form-group
+        = f.email_field :email, class: "form-control input-lg", placeholder: "Email"
+
+      .row.form-group
+        = f.password_field :password, class: "form-control input-lg", placeholder: "Password"
+      .row.form-group
+        = f.password_field :password_confirmation, class: "form-control input-lg", placeholder: "Confirm Password"
+      .row.form-group
+        = f.submit "Sign up", class: "btn btn-block btn-lg btn-primary margin-space"
+      .row.text-center.form-group.devise-links
+        = render "devise/shared/links"

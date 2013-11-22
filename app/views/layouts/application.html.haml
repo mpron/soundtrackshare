@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %title SoundtrackShare.io
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    %link{href: "http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700", rel: "stylesheet", type: "text/css"}/
+  %body
+    .container
+      - if flash[:notice]
+        .alert.alert-success
+          %button.close{"data-dismiss" => "alert", type: "button"} ×
+          = flash[:notice]
+      - elsif flash[:error]
+        .alert.alert-error
+          %button.close{"data-dismiss" => "alert", type: "button"} ×
+          = flash[:error]
+      - elsif flash[:alert]
+        .alert.alert-warning
+          %button.close{"data-dismiss" => "alert", type: "button"} ×
+          = flash[:alert]
+    = yield

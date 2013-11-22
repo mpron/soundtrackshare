@@ -1,0 +1,12 @@
+.container
+  %h1.text-center
+    Resend Unlock Instructions
+  .formbox
+    .margin-space.text-center
+      = form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post }) do |f|
+        = devise_error_messages!
+        .row.form-group
+          = f.email_field :email, autofocus: true, class: "form-control input-lg", placeholder: "Email"
+        .row.form-group
+          = f.submit "Resend Unlock Instructions", class: "btn btn-block btn-lg btn-primary margin-space"
+      = render "devise/shared/links"

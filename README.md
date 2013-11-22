@@ -14,7 +14,7 @@ You can also use my seed file to see it in action, but I encourage you to make y
 ```
 $ rake db:seed
 ```
-## About the site
+# **About the site**
 I created this website to share the wealth of original soundtrack pieces I've found over the years from movies, television, and animation. Not only that, but I've also added a rich tagging system and a granular search to help you find the exact mood you are looking for in a piece. I thought this site might be useful to anyone searching for the right mood in a soundtrack piece for a video production, or that it would be nice for anyone who likes listening to OSTs and is trying to discover new soundtrack music.
 
 #### **Share Tracks**
@@ -32,6 +32,6 @@ When you click to go to the "advanced search" page from the link on the homepage
 #### **User Pages**
 The rest of the site is pretty intuitive.  You can click on the username of the person who shared a given track (look for the "Shared by [username]" label on top of the video) to visit their user page, which lists all of their shared tracks.  You should see a delete button under your videos so if you mess up when posting a YouTube video track, you can delete it and try posting it again.
 
-### About Me
+# About Me
 I made this website during my tenure in the [Bloc.io](https://www.bloc.io) web development training program. It showcases some of the skills I learned for building Ruby on Rails applications, and it allowed me to focus on a subject that I am enthusiastic about.
 If you want to talk about this site or share your opinions about soundtrack music, feel free to email me at mpronschinske [plus] sts [at] gmail [dot] com
