@@ -6,9 +6,10 @@
         %small
           = params[:name].capitalize
           Playlist
-        %iframe{ allowFullScreen: "true", allowscriptaccess: "always", frameborder: "0", height:"430", src: "http://www.youtube.com/embed/#{@tag.url}", title: "YouTube video player", width: "640" }
+        %iframe{ allowFullScreen: "true", allowscriptaccess: "always", frameborder: "0", height:"430", src: "http://www.youtube.com/embed/#{@playlist}", title: "YouTube video player", width: "640" }
         .row
-          %a{href: "http://www.youtube.com/watch?v=puRsvgjqySU&feature=share&list=PLn6gIVVWkLcRB4DQmie_x61ER15etU72m"} Playlist Link
+          %h4
+            %a{href: "http://www.youtube.com/watch?v=#{@playlistlink}"} Can't See The Playlist?  Try This Playlist Link
     .row
       .text-center.formbox
         = link_to "Share Track", new_post_path, class: "margin-space btn btn-success btn-lg btn-block", id: "share-button"

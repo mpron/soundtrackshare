@@ -10,7 +10,7 @@ class Post < ActiveRecord::Base
   end
 
   validates :url, :format => { :with => /youtube.com\/watch\?v=.{11}$/i,
-    :message => "Only use direct YouTube video page URLs please." }, presence: true
+    :message => " - You can only use direct YouTube video page URLs." }, presence: true
 
   validates :user, presence: true
   validates :tag_list, presence: true
