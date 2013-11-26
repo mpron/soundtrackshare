@@ -4,7 +4,7 @@
       %small
         Shared by #{link_to post.user.name, user_path(post.user)}
     .text-center
-      %iframe{allowfullscreen: "true", allowscriptaccess: "always", frameborder: "0", height: "430", src: "http://www.youtube.com/embed/#{post.formatted_url}", title: "YouTube video player", width: "640"}
+      //%iframe{allowfullscreen: "true", allowscriptaccess: "always", frameborder: "0", height: "430", src: "http://www.youtube.com/embed/#{post.formatted_url}", title: "YouTube video player", width: "640"}
       %p
         - post.tag_list.each do |t|
           %span.tag= t.capitalize

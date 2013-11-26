@@ -88,7 +88,7 @@ Tag.find_by_name("dramatic").update_attribute("url", "_gBvQR-8W5I?list=PLn6gIVVW
 Tag.find_by_name("epic").update_attribute("url", "KzlAE3Z-vcA?list=PLn6gIVVWkLcRLLmGbTq1ZViCU9qsau9ba")
 Tag.find_by_name("evil").update_attribute("url", "lmc21V-zBq0?list=PLn6gIVVWkLcQkXeSVg8xxMA5cwli3FW1h")
 Tag.find_by_name("excitement").update_attribute("url", "Bg-RH9AfYVM?list=PLn6gIVVWkLcRSr5_dGOwy8lLXBLATq1Km")
-Tag.find_by_name("exploring").update_attribute("url", "u9a8HwoMEGY?list=PLn6gIVVWkLcQ6saDs9nTV3y0II4EuFZf1")
+Tag.find_by_name("mysterious").update_attribute("url", "")
 Tag.find_by_name("happy").update_attribute("url", "rDyw-f5CXCk?list=PLn6gIVVWkLcT8dJKv9fMYynnCdlTjd1xN")
 Tag.find_by_name("haunting").update_attribute("url", "oGx5P1N22pI?list=PLn6gIVVWkLcR6iFZE7u7hooM6C-M_fI8u")
 Tag.find_by_name("hope").update_attribute("url", "BkE3ti_dPko?list=PLn6gIVVWkLcQw8OVPjCqTGRYmJd33UYGG")
