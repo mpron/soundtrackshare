@@ -9,7 +9,7 @@
             Playlist
         %iframe.visible-md.visible-lg{ allowFullScreen: "true", allowscriptaccess: "always", frameborder: "0", src: "http://www.youtube.com/embed/#{@playlist}", title: "YouTube video player" }
         .row
-          %h4
+          %h4.tagbox
             %a.visible-xs.visible-sm{href: "youtube://www.youtube.com/watch?v=#{@playlistlink}"} Open #{params[:name].capitalize} Playlist in YouTube App
     .row
       .text-center.formbox
