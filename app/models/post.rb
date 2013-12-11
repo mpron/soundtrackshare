@@ -13,7 +13,7 @@ class Post < ActiveRecord::Base
     :message => " - You can only use direct YouTube video page URLs." }, presence: true
 
   validates :user, presence: true
-  validates :tag_list, presence: true
+  validates :tag_list, presence: { message: "was empty OR you didn't use any of the tags below." }
 
   def self.search(search, filter)
     if search && filter == "true"
