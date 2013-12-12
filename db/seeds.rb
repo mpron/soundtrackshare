@@ -19,64 +19,25 @@ u.save
 
 #Post and Tag Seeds
 
-#1
 Post.create(url: "http://www.youtube.com/watch?v=75QC59i-dIY", user_id: 1, tag_list: "fantasy, adventure, orchestral, exploring")
-
-#2
 Post.create(url: "http://www.youtube.com/watch?v=PWlLp5riuzk", user_id: 1, tag_list: "battle, epic")
-
-#3
 Post.create(url: "http://www.youtube.com/watch?v=OWCB2DabJ04", user_id: 2, tag_list: "dramatic, epic")
-
-#4
 Post.create(url: "http://www.youtube.com/watch?v=WzljtlGj_lA", user_id: 1, tag_list: "excitement")
-
-#5
 Post.create(url: "http://www.youtube.com/watch?v=2cKXHVgH40Q", user_id: 1, tag_list: "happy, excitement")
-
-#6
 Post.create(url: "http://www.youtube.com/watch?v=vLVyhWDnSOI", user_id: 1, tag_list: "inspirational")
-
-#7
 Post.create(url: "http://www.youtube.com/watch?v=zpY3q8oMzJM", user_id: 1, tag_list: "Piano, Ambient, Romance")
-
-#8
 Post.create(url: "http://www.youtube.com/watch?v=oGx5P1N22pI", user_id: 1, tag_list: "tension")
-
-#9
 Post.create(url: "http://www.youtube.com/watch?v=DT8S9rOd2zM", user_id: 1, tag_list: "sadness, bittersweet, love, romance")
-
-#10
 Post.create(url: "http://www.youtube.com/watch?v=K5tsfpLm4F4", user_id: 1, tag_list: "bravery, confidence, battle, violin, driving")
-
-#11
 Post.create(url: "http://www.youtube.com/watch?v=nNDFN2f07XQ", user_id: 1, tag_list: "orchestral, distortion, evil, dramatic, guitar")
-
-#12
 Post.create(url: "http://www.youtube.com/watch?v=cqTVWJeixNI", user_id: 1, tag_list: "haunting, marimba")
-
-#13
 Post.create(url: "http://www.youtube.com/watch?v=YdgF63xKTe0", user_id: 1, tag_list: "hope, possibilities, adventure, dramatic, piano, flying")
-
-#14
 Post.create(url: "http://www.youtube.com/watch?v=eJ5IfryrCVs", user_id: 1, tag_list: "inspirational, sports, forging")
-
-#15
 Post.create(url: "http://www.youtube.com/watch?v=lOPaw9B63hw", user_id: 1, tag_list: "driving, orchestral, dramatic, strings, melancholy, tension")
-
-#16
 Post.create(url: "http://www.youtube.com/watch?v=M5LMP2NaZSg", user_id: 1, tag_list: "nostalgia, piano, love, bittersweet, ending, orchestral")
-
-#17
 Post.create(url: "http://www.youtube.com/watch?v=7mxtY8ytEO0", user_id: 1, tag_list: "hope, melancholy, sadness, piano")
-
-#18
 Post.create(url: "http://www.youtube.com/watch?v=dclghhnW4oU", user_id: 1, tag_list: "8-bit, adventure, confidence")
-
-#19
 Post.create(url: "http://www.youtube.com/watch?v=b_ajArNJmjY", user_id: 1, tag_list: "Confidence, Angry, Tension, Distortion")
-
-#20+
 Post.create(url: "http://www.youtube.com/watch?v=hesg2_q-B-Q", user_id: 1, tag_list: "Dramatic, Building, Preparing, Sci-fi, Hope")
 Post.create(url: "http://www.youtube.com/watch?v=2PrK5sLskyw", user_id: 1, tag_list: "Building, Hope, Bravery")
 Post.create(url: "http://www.youtube.com/watch?v=NcaFf5RwrBY", user_id: 1, tag_list: "Sci-fi, Horn, Evil, Epic, Angry")
@@ -103,7 +64,7 @@ Post.create(url: "http://www.youtube.com/watch?v=1-EgMjgV-6c", user_id: 1, tag_l
 Post.create(url: "http://www.youtube.com/watch?v=EjOatCkrT1M", user_id: 1, tag_list: "Kabuki, Battle, Drums")
 Post.create(url: "http://www.youtube.com/watch?v=osGV_1LxAgQ", user_id: 1, tag_list: "Drums, Kabuki, Preparing, Epic, Tension")
 Post.create(url: "http://www.youtube.com/watch?v=M2DbjbZz_dM", user_id: 1, tag_list: "Kabuki, Tension, Battle")
-Post.create(url: "http://www.youtube.com/watch?v=F7U0yKMs85Q", user_id: 1, tag_list: "Medieval, Epic, March, Confidence")
+Post.create(url: "http://www.youtube.com/watch?v=iUkpDAezStI", user_id: 1, tag_list: "Medieval, Epic, March, Confidence")
 Post.create(url: "http://www.youtube.com/watch?v=22yTf0kD6-g", user_id: 1, tag_list: "Children's Choir, Hope, Adventure, Melancholy, Medieval")
 Post.create(url: "http://www.youtube.com/watch?v=1vU7XqToZso", user_id: 1, tag_list: "Electric Guitar, Epic, Preparing, Confidence, Sports")
 Post.create(url: "http://www.youtube.com/watch?v=4E8wHTX5nac", user_id: 1, tag_list: "Epic, Preparing, Battle, Sports, Confidence")
@@ -125,39 +86,77 @@ Post.create(url: "http://www.youtube.com/watch?v=M1BhZUUORqg", user_id: 1, tag_l
 Post.create(url: "http://www.youtube.com/watch?v=W0IWB6qEn9o", user_id: 1, tag_list: "Distortion, Evil, Tribal, Battle")
 Post.create(url: "http://www.youtube.com/watch?v=7GStKGNxU9U", user_id: 1, tag_list: "Violin, Victorian, Dramatic, Confidence")
 Post.create(url: "http://www.youtube.com/watch?v=TGaJXHhp7Lw", user_id: 1, tag_list: "Victorian, Orchestral")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-Post.create(url: "", user_id: 1, tag_list: "")
-
-
+Post.create(url: "http://www.youtube.com/watch?v=4lsCTTYEXYg", user_id: 1, tag_list: "Violin, Village, Hope, Happy")
+Post.create(url: "http://www.youtube.com/watch?v=WWWETTms5kg", user_id: 1, tag_list: "Happy, Village")
+Post.create(url: "http://www.youtube.com/watch?v=nffKT1m8_Fk", user_id: 1, tag_list: "Western, Bravery")
+Post.create(url: "http://www.youtube.com/watch?v=tg-yC0xcI9s", user_id: 1, tag_list: "Western, Battle, Driving, Drums")
+Post.create(url: "http://www.youtube.com/watch?v=kimebj_pw78", user_id: 1, tag_list: "Western, Melancholy")
+Post.create(url: "http://www.youtube.com/watch?v=NUJ7qjSvGgA", user_id: 1, tag_list: "8-bit")
+Post.create(url: "http://www.youtube.com/watch?v=kUBHD2g9zq4", user_id: 1, tag_list: "8-bit, Driving")
+Post.create(url: "http://www.youtube.com/watch?v=N4SjivMja_o", user_id: 1, tag_list: "Accordion, Tension")
+Post.create(url: "http://www.youtube.com/watch?v=poxDJHoYxCc", user_id: 1, tag_list: "Relaxed, Accordion, Possibilities, Fantasy")
+Post.create(url: "http://www.youtube.com/watch?v=izJHIZZgEH8", user_id: 1, tag_list: "Acoustic Guitar, Electric Guitar, Hope, Happy")
+Post.create(url: "http://www.youtube.com/watch?v=nsUhq8DC6Xc", user_id: 1, tag_list: "Sci-fi, Acoustic Guitar, Steady, Chase, Confidence")
+Post.create(url: "http://www.youtube.com/watch?v=4kAtK3iQqHk", user_id: 1, tag_list: "Brass, Orchestral, Epic, Medieval, Tension")
+Post.create(url: "http://www.youtube.com/watch?v=f5hH-q3Xwig", user_id: 1, tag_list: "Hope, Anthem, Epic, Trumpet, Brass, Choir, Confidence, Bravery, Orchestral, Forging")
+Post.create(url: "http://www.youtube.com/watch?v=nS3DIX0if8Y", user_id: 1, tag_list: "Hope, Anthem, Epic, Trumpet, Brass, Confidence, Orchestra, Electric Guitar, Possibilities, Excitement")
+Post.create(url: "http://www.youtube.com/watch?v=EatFk-4Ulgc", user_id: 1, tag_list: "Epic, Choir, Battle, Distortion")
+Post.create(url: "http://www.youtube.com/watch?v=TpACwgiti80", user_id: 1, tag_list: "Female Vocalist, Haunting, Choir, Epic, Sadness")
+Post.create(url: "http://www.youtube.com/watch?v=vmHbboM5yMA", user_id: 1, tag_list: "Battle, Epic, Forging, Choir, March")
+Post.create(url: "http://www.youtube.com/watch?v=52Jlhl2mRW0", user_id: 1, tag_list: "Orchestral, Children's Choir, Bittersweet, Romance, Dramatic")
+Post.create(url: "http://www.youtube.com/watch?v=p2lwFiIaMAE", user_id: 1, tag_list: "Sadness, Haunting, Children's Choir, Evil")
+Post.create(url: "http://www.youtube.com/watch?v=-DiQfy5BwvU", user_id: 1, tag_list: "Epic, Battle, Confidence, Drums")
+Post.create(url: "http://www.youtube.com/watch?v=xntraDmha38", user_id: 1, tag_list: "Driving, Distortion, Epic, Confidence, Bravery, Battle")
+Post.create(url: "http://www.youtube.com/watch?v=t0EKwWwCSKk", user_id: 1, tag_list: "Distortion, Ethereal, Harp")
+Post.create(url: "http://www.youtube.com/watch?v=5F_p3ZK1FGU", user_id: 1, tag_list: "Epic, Possibilities, Bravery, Drums, Punchy")
+Post.create(url: "http://www.youtube.com/watch?v=hbK4skSdpj0", user_id: 1, tag_list: "Tension, Dramatic, Kabuki, Drums, Preparing, Battle, Epic")
+Post.create(url: "http://www.youtube.com/watch?v=S8gmbWKXY_M", user_id: 1, tag_list: "Hope, Inspirational, Bittersweet, Orchestral, Dramatic, Drums")
+Post.create(url: "http://www.youtube.com/watch?v=wsICJx8eHUg", user_id: 1, tag_list: "Electric Guitar, Battle, Epic, Dramatic, Female Vocal, Confidence, Bravery")
+Post.create(url: "http://www.youtube.com/watch?v=rIq9NgbdZJ0", user_id: 1, tag_list: "Electric Guitar, Violin, Evil, Battle, Dramatic")
+Post.create(url: "http://www.youtube.com/watch?v=LRTiUqGEDI4", user_id: 1, tag_list: "Piano, Driving, Female Vocal, Possibilities, Latin")
+Post.create(url: "http://www.youtube.com/watch?v=cCXY-499bBk", user_id: 1, tag_list: "Brazilian, Flute, Mysterious, Brass, Latin")
+Post.create(url: "http://www.youtube.com/watch?v=oKyfFpDrl0c", user_id: 1, tag_list: "Flute, Hope, Inspirational, Bittersweet, Orchestral, Dramatic")
+Post.create(url: "http://www.youtube.com/watch?v=hDhPvrYY0kY", user_id: 1, tag_list: "Evil, Driving, Forging")
+Post.create(url: "http://www.youtube.com/watch?v=eOGkZsuFILU", user_id: 1, tag_list: "Battle, Forging, Electric Guitar, Confidence")
+Post.create(url: "http://www.youtube.com/watch?v=KVOOzlmrdjg", user_id: 1, tag_list: "Harp, Exploring, Mysterious, Happy")
+Post.create(url: "http://www.youtube.com/watch?v=IzLZaNwDqns", user_id: 1, tag_list: "Sci-fi, Trumpet, Horn, Evil, Epic, Angry")
+Post.create(url: "http://www.youtube.com/watch?v=fnooGOhLIdM", user_id: 1, tag_list: "Dramatic, Sadness, Bravery, Horn, Strings")
+Post.create(url: "http://www.youtube.com/watch?v=jkrgYFMJOq0", user_id: 1, tag_list: "Excitement, Violin, Irish Folk, Western")
+Post.create(url: "http://www.youtube.com/watch?v=bO24b9d8A4I", user_id: 1, tag_list: "Celebration, Happy, Irish Folk")
+Post.create(url: "http://www.youtube.com/watch?v=ZrGLgx5IegY", user_id: 1, tag_list: "Romance, Trumpet, Latin")
+Post.create(url: "http://www.youtube.com/watch?v=Qga-Mwr_opM", user_id: 1, tag_list: "Happy, Latin")
+Post.create(url: "http://www.youtube.com/watch?v=gdLVhuQTmRU", user_id: 1, tag_list: "Female Vocal, Male Vocal, Haunting, Melancholy")
+Post.create(url: "http://www.youtube.com/watch?v=Td9V43f03Tw", user_id: 1, tag_list: "Evil, Choir, Male Vocal, Battle")
+Post.create(url: "http://www.youtube.com/watch?v=wIuUER_Rpe8", user_id: 1, tag_list: "Female Vocal, Marimba, Haunting, Melancholy, Sadness")
+Post.create(url: "http://www.youtube.com/watch?v=emkLyq3EfLU", user_id: 1, tag_list: "Violin, Strings")
+Post.create(url: "http://www.youtube.com/watch?v=ZWaLYBeLffk", user_id: 1, tag_list: "Orchestral, Confidence, Excitement, Strings, Trumpet")
+Post.create(url: "http://www.youtube.com/watch?v=u3X6YZ74aHA", user_id: 1, tag_list: "Sci-Fi, Synth, Epic, Preparing, Confidence, Possibilities")
+Post.create(url: "http://www.youtube.com/watch?v=_tasQjI9j6U", user_id: 1, tag_list: "Sci-fi, Synth, Haunting, Confidence")
+Post.create(url: "http://www.youtube.com/watch?v=eMcBR0J1c4E", user_id: 1, tag_list: "Epic, Battle, Preparing, March, Brass, Bravery, Confidence")
+Post.create(url: "http://www.youtube.com/watch?v=gZJZE_13Chc", user_id: 1, tag_list: "March, Anthem, Trumpet, Bravery, Confidence")
+Post.create(url: "http://www.youtube.com/watch?v=4UfBqCw1Tl8", user_id: 1, tag_list: "Bravery, Epic, Choir, Trumpet, Brass, Orchestral")
+Post.create(url: "http://www.youtube.com/watch?v=_skOHTKttHs", user_id: 1, tag_list: "Violin, Sadness")
+Post.create(url: "http://www.youtube.com/watch?v=x8_gS7tI3eE", user_id: 1, tag_list: "Violin, Happy")
+Post.create(url: "http://www.youtube.com/watch?v=n3zm2v6cnvo", user_id: 1, tag_list: "Bravery, Dramatic, Inspirational, Anthem")
+Post.create(url: "http://www.youtube.com/watch?v=v58Sir62ML0", user_id: 1, tag_list: "Anthem, Confidence, Brass, Electric Guitar, Choir, Epic")
+Post.create(url: "http://www.youtube.com/watch?v=45Hv4eht4G0", user_id: 1, tag_list: "Driving, Dramatic, Confidence")
+Post.create(url: "http://www.youtube.com/watch?v=4LKIsWOSHAY", user_id: 1, tag_list: "Female Vocal, Bravery, Driving, Melancholy, Strings, Drums")
+Post.create(url: "http://www.youtube.com/watch?v=pgFKc2-OMV8", user_id: 1, tag_list: "Galloping, Dramatic, Bravery")
+Post.create(url: "http://www.youtube.com/watch?v=LNZmzLzvJo8", user_id: 1, tag_list: "Bravery, Female Vocal, Galloping")
+Post.create(url: "http://www.youtube.com/watch?v=tBShZHLbC6c", user_id: 1, tag_list: "Galloping, Bravery, Confidence, Orchestral, Punchy, Battle, Epic")
+Post.create(url: "http://www.youtube.com/watch?v=8YgvzKjR798", user_id: 1, tag_list: "Orchestral, Nostalgia, Lilting, Relaxed")
+Post.create(url: "http://www.youtube.com/watch?v=puRsvgjqySU", user_id: 1, tag_list: "Orchestral, Adventure, Inspirational, March, Hope")
+Post.create(url: "http://www.youtube.com/watch?v=QSeArGEBMCA", user_id: 1, tag_list: "March, Strings, Inspirational, Adventure")
+Post.create(url: "http://www.youtube.com/watch?v=4-_XANMleDc", user_id: 1, tag_list: "Hope, Orchestral, Battle, Confidence, Offbeat, Inspirational")
+Post.create(url: "http://www.youtube.com/watch?v=CdFkZZc9Uaw", user_id: 1, tag_list: "Bittersweet, Distortion, Offbeat, Latin")
+Post.create(url: "http://www.youtube.com/watch?v=dWE0nlhpdq8", user_id: 1, tag_list: "Battle, Synth, Offbeat, Tension")
+Post.create(url: "http://www.youtube.com/watch?v=zMHaHhdORjQ", user_id: 1, tag_list: "Punchy, Confidence, Battle")
+Post.create(url: "http://www.youtube.com/watch?v=R0-Ah_hwfVs", user_id: 1, tag_list: "Piano, Punchy, Relaxed, Happy")
+Post.create(url: "http://www.youtube.com/watch?v=B9w-IRgkN70", user_id: 1, tag_list: "Offbeat, Building, Strings, Excitement")
+Post.create(url: "http://www.youtube.com/watch?v=EPl9evfmD1A", user_id: 1, tag_list: "Electric Guitar, Strings, Tension, Battle")
+Post.create(url: "http://www.youtube.com/watch?v=Vf-m2o97gdI", user_id: 1, tag_list: "Driving, Strings, Bravery, Dramatic, Hope, Sadness")
+Post.create(url: "http://www.youtube.com/watch?v=pDmEX3ToT78", user_id: 1, tag_list: "Confidence, Adventure, Epic, Choir, Orchestral, Nostalgia, Excitement, Possibilities, Inspirational")
+Post.create(url: "http://www.youtube.com/watch?v=9eZekO4RRUk", user_id: 1, tag_list: "Galloping, Choir, Dramatic, Battle, Bravery, Drums")
 
 
 #############
