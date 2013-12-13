@@ -16,9 +16,9 @@
           = link_to "Sign In", new_user_session_path
           or #{link_to "Sign Up", new_user_registration_path} to share!
         | #{link_to "About", about_path}
+      %div
+        %a.twitter-share-button{"data-count" => "none", "data-lang" => "en", href: "https://twitter.com/share"} Tweet 
       .fb-share-button{"data-href" => "http://soundtrackshare.herokuapp.com/", "data-type" => "button", "data-width" => "60"}
-      %p
-        %a.twitter-share-button{"data-count" => "none", "data-lang" => "en", "data-size" => "large", href: "https://twitter.com/share"} Tweet
       %p
         Use the #{link_to "advanced search", search_path} for finding community submitted tracks by mood, or click on one of the mood categories below to find curated playlists.
       - if can? :read, User
