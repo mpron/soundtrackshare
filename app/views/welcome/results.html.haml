@@ -1,11 +1,11 @@
 .container
   %h1.text-center Results
   .formbox
-    %p.text-center If you didn't find any tracks, go back and try using a less strict search. Some tag combinations won't yield any results.
+    %p.text-center If you didn't find any tracks, go back and try using a less strict search. Some tag combinations won't yield any results. *Tags must be comma-separated*
     .form-group
       = form_tag("/results", method: "get") do
         .row
-          = text_field_tag(:tags, nil, class: "form-control input-lg", placeholder: "Tags: Lowercase only! Comma-separated")
+          = text_field_tag(:tags, nil, class: "form-control input-lg", placeholder: "Tags: Lowercase only!")
         %p.text-center.margin-space
           Match #{select_tag(:filter, options_for_select( [['Any', false], ['All', true]]))} of the Selected Tags
         .row

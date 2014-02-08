@@ -2,11 +2,11 @@
   %h1.text-center Search
   .formbox
     %p.text-center
-      Type any number of tags from any of the three menus below to find tracks labelled with those tags.
+      Type any number of tags from any of the three menus below to find tracks labelled with those tags. *Tags must be comma-separated*
     .form-group
       = form_tag("/results", method: "get") do
         .row
-          = text_field_tag(:tags, nil, class: "form-control input-lg", placeholder: "Tags: Lowercase only! Comma-separated")
+          = text_field_tag(:tags, nil, class: "form-control input-lg", placeholder: "Tags: Lowercase only!")
         %p.text-center.margin-space
           Match #{select_tag(:filter, options_for_select([['Any', false], ['All', true]]))} of the Selected Tags
         .row

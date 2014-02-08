@@ -2,7 +2,7 @@
   %h1.text-center New Post
   .formbox
     %p.text-center
-      Paste an individual YouTube URL for the track you'd like to share (<em>Soundtracks only please</em>) and add tags from <em>only</em> the three menus below.
+      Paste an individual YouTube URL for the track you'd like to share (<em>Soundtracks only please</em>) and add tags from <em>only</em> the three menus below. *Tags must be comma-separated*
     = form_for @post, html: {class: "form"} do |f|
       - if @post.errors.any?
         .alert.alert-block
@@ -18,7 +18,7 @@
       = control_group_tag(@post.errors[:tag_list]) do
         .row
           .form-group
-            = f.text_area :tag_list, class: "form-control input-lg", placeholder: "Tags: Lowercase only! Comma-separated", rows: 1
+            = f.text_area :tag_list, class: "form-control input-lg", placeholder: "Tags: Lowercase only!", rows: 1
       .row
         .form-group
           = f.submit "Save", class: 'btn btn-block btn-large btn-info margin-bottom-2'
