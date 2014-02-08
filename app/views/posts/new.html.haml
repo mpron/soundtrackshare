@@ -18,7 +18,7 @@
       = control_group_tag(@post.errors[:tag_list]) do
         .row
           .form-group
-            = f.text_area :tag_list, class: "form-control input-lg", placeholder: "Tags (Comma-separated)", rows: 1
+            = f.text_area :tag_list, class: "form-control input-lg", placeholder: "Tags: Lowercase only! Comma-separated", rows: 1
       .row
         .form-group
           = f.submit "Save", class: 'btn btn-block btn-large btn-info margin-bottom-2'
