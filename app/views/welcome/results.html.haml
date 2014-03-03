@@ -5,7 +5,7 @@
     .form-group
       = form_tag("/results", method: "get") do
         .row
-          = text_field_tag(:tags, nil, class: "form-control input-lg", placeholder: "Tags: Lowercase only!")
+          = text_field_tag(:tags, nil, class: "form-control input-lg", placeholder: "Tags: comma-separated")
         %p.text-center.margin-space
           Match #{select_tag(:filter, options_for_select( [['Any', false], ['All', true]]))} of the Selected Tags
         .row

@@ -15,6 +15,7 @@ class PostsController < ApplicationController
     tag_names = Tag.all.map{|t| t.name}
 
     tags.each do |tag|
+      tag.downcase!
       @post.tag_list.add(tag) if tag_names.include? tag
     end
 
