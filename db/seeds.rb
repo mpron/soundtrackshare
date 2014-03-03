@@ -1,8 +1,8 @@
 u = User.new(
   name: 'Mitch P',
   email: 'mpronschinske+sts@gmail.com', 
-  password: ';phalanx', 
-  password_confirmation: ';phalanx')
+  password: 'password', 
+  password_confirmation: 'password')
 u.skip_confirmation!
 u.save
 u.update_column(:role, 'admin')
@@ -158,6 +158,15 @@ Post.create(url: "http://www.youtube.com/watch?v=EPl9evfmD1A", user_id: 1, tag_l
 Post.create(url: "http://www.youtube.com/watch?v=Vf-m2o97gdI", user_id: 1, tag_list: "driving, strings, bravery, dramatic, hope, sadness")
 Post.create(url: "http://www.youtube.com/watch?v=pDmEX3ToT78", user_id: 1, tag_list: "confidence, adventure, epic, choir, orchestral, nostalgia, excitement, possibilities, inspirational")
 Post.create(url: "http://www.youtube.com/watch?v=9eZekO4RRUk", user_id: 1, tag_list: "galloping, choir, dramatic, battle, bravery, drums")
+
+#Added Feb. 2014
+
+Post.create(url: "http://www.youtube.com/watch?v=bL1kzvvmMsk", user_id: 1, tag_list: "battle, building, kabuki")
+Post.create(url: "http://www.youtube.com/watch?v=2wQ2B9tkRXU", user_id: 1, tag_list: "punchy, battle, galloping, tension")
+Post.create(url: "http://www.youtube.com/watch?v=WARwvGFWmUg", user_id: 1, tag_list: "latin, acoustic guitar, strings, battle, confidence")
+Post.create(url: "http://www.youtube.com/watch?v=ZZP7PkgJCiQ", user_id: 1, tag_list: "synth, distortion, children's choir, bittersweet, confidence, hope, orchestral, sci-fi")
+Post.create(url: "http://www.youtube.com/watch?v=cHbNupImlZA", user_id: 1, tag_list: "bravery, strings, space, offbeat")
+Post.create(url: "http://www.youtube.com/watch?v=zmWte9BaoYs", user_id: 1, tag_list: "trumpet, anthem, dramatic, confidence, bravery, inspirational")
 
 
 #############

@@ -3,11 +3,13 @@ class WelcomeController < ApplicationController
   def search
     @tags = Tag.all
     @filter = params[:filter]
+    @taglist = params[:tags].each { |x| x.downcase }
   end
 
   def results
     @filter = params[:filter]
-    @posts = Post.search(params[:tags], @filter).paginate(page: params[:page], per_page: 10)
+    @taglist = params[:tags].each { |x| x.downcase }
+    @posts = Post.search(@taglist, @filter).paginate(page: params[:page], per_page: 10)
   end
 
 

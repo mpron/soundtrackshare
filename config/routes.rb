@@ -14,6 +14,8 @@ Soundtrackshare::Application.routes.draw do
 
   match "about" => 'welcome#about', via: :get
 
+  match "extras" => 'welcome#extras', via: :get
+
   match "search" => 'welcome#search', via: :get
 
   match "results" => 'welcome#results', via: :get

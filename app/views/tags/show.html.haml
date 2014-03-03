@@ -11,6 +11,8 @@
         .row
           %h4.tagbox
             %a.visible-xs.visible-sm{href: "youtube://www.youtube.com/watch?v=#{@playlistlink}"} Open #{params[:name].capitalize} Playlist in YouTube App
+          %div
+            = link_to "Extra Playlists", extras_path
     .row
       .text-center.formbox
         = link_to "Share Track", new_post_path, class: "margin-space btn btn-success btn-lg btn-block", id: "share-button"
